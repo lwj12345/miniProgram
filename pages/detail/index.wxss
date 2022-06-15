@@ -1,0 +1,61 @@
+.result{
+    text-align: center;
+    background-color: #047dfc;
+    color: white;
+    font-size: large;
+    border-top: 1px solid #ccc;
+    padding-top: 20rpx;
+    position: fixed;
+    z-index: 211;
+    width: 100%;
+    padding-bottom: 10rpx;
+}
+.inbox{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 32rpx;
+    margin-left: 20rpx;
+}
+.result_info view:nth-last-child(1){
+    border-bottom: none;
+}
+.ps{
+    background-color: #d7cbb2;
+}
+.photo{
+    width: 56%;
+    top: 100rpx;
+    z-index: 1;
+}
+.pic2{
+    position: relative;
+    top: 60rpx;
+    height: 400rpx;
+    text-align: center;
+    /* background-color: #a2998a; */
+}
+.info{
+    font-size: large;
+    margin-left: 40rpx;
+    margin-right: 40rpx;
+    position: relative;
+    z-index: 111;
+    background: white;
+    padding-top: 79rpx;
+   }
+   .inbox , .inbox2{
+       color: #414141;
+   }
+   .inbox2{
+       margin-left: 25rpx;
+       margin-bottom: 32rpx;
+   }
+   .text{
+       color: #7f7f7f;
+       
+   }
+   .inbox2 view{
+    margin-bottom: 23rpx;
+   }
+   .inbox last-child{
+    margin-bottom: 32rpx;
+   }

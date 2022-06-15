@@ -1,0 +1,51 @@
+<view class="usermessage">
+    <view class="ps">
+      <view class="pic2">
+      <image class="photo"  src="{{message.pictureUrl}}" mode="widthFix" lazy-load="false" bindtap="previewImage" /></view>
+      <!-- {{pictureUrl}} -->
+    </view>   
+<view class="info">
+    <form bindsubmit="SaveInfo" style="position:relative;z-index: 111;">
+      <view class="result_info">
+        <view class="inbox"><label class="name">购方名称：</label>
+        <view class="text">{{message.purchaserName}}</view>
+        </view>
+        <view class="inbox"><label class="name">购方纳税人识别号：</label>
+        <view class="text">{{message.purchaserRegisterNum}}</view>
+        </view>
+        <view class="inbox"><label class="name">购方地址及电话: </label>
+        <view class="text">{{message.purchaserAddress}}</view>
+        </view>
+         <view class="inbox"><label class="name">购方开户行及账号：</label>
+         <view class="text">{{message.purchaserBank}}</view></view>
+        <view class="inbox"><label class="name">销售方名称：</label><view class="text">{{message.sellerName}}</view></view>
+        <view class="inbox"><label class="name">销售方纳税人识别号：</label><view class="text">{{message.sellerRegisterNum}}</view></view>
+        <view class="inbox"><label class="name">销售方地址及电话：</label><view class="text"><text selectable="true"  bindlongtap='copy'>{{message.sellerAddress}}</text></view></view>
+        <view class="inbox"><label class="name">销售方开户行及账号：</label><view class="text">{{message.sellerBank}}</view></view>
+        <view class="inbox"><label class="name">收款人：</label><view class="text">{{message.payee}}</view></view>
+        <view class="inbox"><label class="name">复核：</label><view class="text">{{message.checker}}</view></view>
+        <view class="inbox"><label class="name">开票人：</label><view class="text">{{message.noteDrawer}}</view></view>
+        <!-- 循环将数组里面的数据渲染出来 -->
+        <view wx:for="{{message.productList}}" wx:key="index" class="inbox2">
+             <label class="name" >货物或应税劳务,服务名称：</label>
+             <view class="text"  style="border-bottom:1px solid #ccc">{{item.commodityName}}</view>
+            <label class="name" >数量：</label>
+            <view class="text"  style="border-bottom:1px solid #ccc">{{item.commodityNum}}</view>
+            <label class="name" >单价：</label>
+            <view class="text"  style="border-bottom:1px solid #ccc">{{item.commodityPrice}}</view>
+            <label class="name" >金额：</label>
+             <view class="text"  style="border-bottom:1px solid #ccc">{{item.commodityAmount}}</view>
+            <label class="name" >税率：</label>
+            <view class="text"  style="border-bottom:1px solid #ccc">{{item.commodityTaxRate}}</view>
+            <label class="name" >税额：</label>
+            <view class="text"  style="border-bottom:1px solid #ccc"><text class="" selectable="true" space="false" decode="false">{{item.commodityTax}}</text></view>
+        </view>
+      
+         <view class="inbox"><label class="name">合计税额：</label>
+         <view class="text">{{message.totalTax}}</view></view>
+          <view class="inbox"><label class="name">价税合计：</label><view class="text">{{message.amountInFiguers}}</view></view>
+      </view>
+    </form>
+</view>
+</view>
+ 

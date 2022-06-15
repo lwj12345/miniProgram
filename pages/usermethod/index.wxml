@@ -1,0 +1,18 @@
+<view>
+    <view class="text1">
+        <view class="p1">点击上传图片-允许授权申请</view>
+        <view class="p1">-再次点击上传图片（拍照上传/相册上传）</view>
+            <image class="pic3" src="https://i.loli.net/2021/05/08/BwOQoGdXnTbi1LJ.png" mode="widthFix"  />
+            <image class="pic2" src="https://i.loli.net/2021/05/08/q2Uu48SoiXjhZms.jpg" mode="widthFix"  />
+    </view>
+    <view class="text2">
+        <view class="p1">识别出来的文字单击可修改</view>
+        <view class="p1">发票图片点击可进行放大预览</view>
+        <image class="pic4" src="https://i.loli.net/2021/05/08/xenpCk5i3yNq2Ms.png" mode="widthFix"  />
+    </view>
+    <view class="text3">
+          <view class="p1">识别记录点击可进行查看历史记录</view>
+          <view class="p1">可点击报销按钮进行报销发票</view>
+          <image class="pic1" src="https://i.loli.net/2021/05/08/pGwDMmZdCLVjQIb.png" mode="widthFix"  />
+    </view>
+</view>

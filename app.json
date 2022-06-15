@@ -1,0 +1,20 @@
+{
+  "pages":[
+    "pages/first/index",
+    "pages/result/index",
+    "pages/history/index",
+    "pages/detail/index",
+    "pages/usermethod/index"
+  ], 
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#d7cbb2",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#d7cbb2"
+  },
+  "style": "v2",
+  "sitemapLocation":"sitemap.json",
+  "networkTimeout": {
+    "request": 100000
+}
+}

@@ -1,0 +1,70 @@
+.msg{
+    border:1px solid #e1f0fe;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    height: 200rpx;
+    border-radius: 15rpx;
+    margin-bottom: 30rpx;
+    box-shadow: 2rpx 2rpx 5rpx 5rpx #e1f0fe;
+    margin-top: 30rpx;
+}
+.select{
+    background-color: red;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+.sellerName{
+    display: flex;
+    flex: 3;
+    margin-top: 44rpx;
+}
+.s2{
+    flex: 4;
+    font-size: 27rpx;
+    margin-left: 10rpx;
+    width: 100px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
+}
+.date{
+    flex:3;
+}
+
+.sellerName, .date{
+    margin-left: 20rpx;
+    margin-bottom: 20rpx;
+    color: #6d6d6d;
+}
+.s1{
+    color: #000000;
+    font-size: 30rpx;
+}
+.bao{
+    font-size: 25rpx;
+    width: 22%;
+    display: flex;
+    height: 50%;
+    margin:50rpx 28rpx 0 11rpx;
+}
+.Reimbursement{
+    width: 134rpx;
+    text-align: center;
+    border-radius: 35rpx;
+    font-size: 27rpx;
+    color: white;
+    height: 68rpx;
+    line-height: 68rpx;
+    background-color:#e7ae57
+}
+.change{
+    width: 134rpx;
+    text-align: center;
+    border-radius: 35rpx;
+    font-size: 27rpx;
+    color: white;
+    height: 68rpx;
+    line-height: 68rpx;
+    background-color:#a7a6ab;
+}

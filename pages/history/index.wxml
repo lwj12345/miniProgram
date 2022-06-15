@@ -1,0 +1,22 @@
+<view class="list"   wx:for="{{msg.billVoList}}" wx:key="index">
+    <!-- <navigator  class="msg_detail"> -->
+    <!-- {{item.sellerName}} -->
+    <view class="msg">
+             <view class="data" bindlongpress="deleteInfo"  data-index='{{index}}' bindtap='detailmsg'  data-item="{{item}}">
+                <view class="sellerName">
+                    <text class="s1">销售方名称 </text>
+                    <text class="s2">{{item.sellerName}}</text>
+                </view>
+                <view class="date">
+                    <text class="s1">扫描日期 </text>
+                    <text class="s2">{{item.ocrTime}}</text>
+                </view>
+             </view>
+            <view class="bao">
+                <view  class="Reimbursement {{item.statu==1?'change':' '}}" style="background-color:{{backgroundColor}}" bindtap='changeColor' data-index='{{index}}'>报销</view>
+            </view>
+       
+    </view>
+    <!-- </navigator> -->
+</view>
+  

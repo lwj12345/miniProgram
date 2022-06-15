@@ -1,0 +1,41 @@
+<view class="usermessage">
+    <view class="ps">
+      <view class="pic2">
+       <!-- <image class="pic2" src="https://i.loli.net/2021/04/19/t7uURMB5IvFQEpn.jpg"  style="width:100%;"/> -->
+      <image class="photo"  src="{{pictureUrl}}" mode="widthFix" lazy-load="false" bindtap="previewImage" /></view>
+      <!-- {{pictureUrl}} -->
+    </view>   
+<view class="info">
+    <form bindsubmit="SaveInfo" style="position:relative;z-index: 111;">
+      <view class="result_info">
+        <view class="inbox"><label class="name">购方名称：</label><input name="Name" type="text" value="{{message.purchaserName}}"></input></view>
+        <view class="inbox"><label class="name">购方纳税人识别号：</label><input name="Num" type="text" value="{{message.purchaserRegisterNum}}"></input></view>
+        <view class="inbox"><label class="name">购方地址及电话: </label><input name="Address" type="text" value="{{message.purchaserAddress}}"></input></view>
+         <view class="inbox"><label class="name">购方开户行及账号：</label><input name="Bank" type="text" value="{{message.purchaserBank}}"></input></view>
+        <view class="inbox"><label class="name">销售方名称：</label><input name="SellerName" type="text" value="{{message.sellerName}}"></input></view>
+        <view class="inbox"><label class="name">销售方纳税人识别号：</label><input name="SellerRegisterNum" type="text" value="{{message.sellerRegisterNum}}"></input></view>
+        <view class="inbox"><label class="name">销售方地址及电话：</label><input name="SellerAddress" type="text" value="{{message.sellerAddress}}"></input></view>
+        <view class="inbox"><label class="name">销售方开户行及账号：</label><input name="SellerBank" type="text" value="{{message.sellerBank}}"></input></view>
+        <view class="inbox"><label class="name">收款人：</label><input name="Payee" type="text" value="{{message.payee}}"></input></view>
+        <view class="inbox"><label class="name">复核：</label><input name="Checker" type="text" value="{{message.checker}}"></input></view>
+        <view class="inbox"><label class="name">开票人：</label><input name="NoteDrawer" type="text" value="{{message.noteDrawer}}"></input></view>
+        <!-- 循环将数组里面的数据渲染出来 -->
+        <view wx:for="{{message.productList}}" wx:key="index" class="inbox2">
+             <label class="name" >货物或应税劳务,服务名称：</label><input  style="border-bottom:1px solid #ccc" name="commodityName" type="text" value="{{item.commodityName}}"></input>
+            <label class="name" >数量：</label><input  style="border-bottom:1px solid #ccc" name="commodityNum" type="text" value="{{item.commodityNum}}"></input>
+            <label class="name" >单价：</label><input  style="border-bottom:1px solid #ccc" name="commodityPrice" type="text" value="{{item.commodityPrice}}"></input>
+            <label class="name" >金额：</label><input  style="border-bottom:1px solid #ccc" name="commodityAmount" type="text" value="{{item.commodityAmount}}"></input>
+            <label class="name" >税率：</label><input  style="border-bottom:1px solid #ccc" name="commodityTaxRate" type="text" value="{{item.commodityTaxRate}}"></input>
+            <label class="name" >税额：</label><input  style="border-bottom:1px solid #ccc" name="commodityTax" type="text" value="{{item.commodityTax}}"></input>
+        </view>
+      
+         <view class="inbox"><label class="name">合计税额：</label><input name="TotalTax" type="text" value="￥{{message.totalTax}}"></input></view>
+          <view class="inbox"><label class="name">价税合计：</label><input name="AmountInFiguers" type="text" value="￥{{message.amountInFiguers}}"></input></view>
+          <view class="btn_area">
+             <button type="primary" bindtap="" form-type='submit'>提交</button>
+          </view>
+      </view>
+    </form>
+</view>
+</view>
+ 

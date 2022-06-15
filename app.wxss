@@ -1,0 +1,148 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+@font-face {
+  font-family: "iconfont"; /* Project id 2449679 */
+  src: url('//at.alicdn.com/t/font_2449679_z0oesn8c9o.woff2?t=1620188526545') format('woff2'),
+       url('//at.alicdn.com/t/font_2449679_z0oesn8c9o.woff?t=1620188526545') format('woff'),
+       url('//at.alicdn.com/t/font_2449679_z0oesn8c9o.ttf?t=1620188526545') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon1:before {
+  content: "\e603";
+}
+
+.icon-arrow-left:before {
+  content: "\e604";
+}
+
+.icon-aright:before {
+  content: "\e605";
+}
+
+.icon-zhaoxiangji:before {
+  content: "\e600";
+}
+
+.icon-shouye:before {
+  content: "\e626";
+}
+
+.icon-zhaoxiangji1:before {
+  content: "\e633";
+}
+
+.icon-zhaoxiangji2:before {
+  content: "\e7a4";
+}
+
+.icon-wodeziliao:before {
+  content: "\e6e1";
+}
+
+.icon-mydata-copy:before {
+  content: "\e601";
+}
+
+.icon-shouye1:before {
+  content: "\e66f";
+}
+
+.icon-lishijilu:before {
+  content: "\e624";
+}
+
+.icon-lishijilu1:before {
+  content: "\e60a";
+}
+
+.icon-icon-test:before {
+  content: "\e602";
+}
+
+.icon-wode:before {
+  content: "\e63a";
+}
+
+.icon-lishijilu2:before {
+  content: "\e606";
+}
+
+.icon-wode1:before {
+  content: "\e608";
+}
+
+.icon-wode-copy:before {
+  content: "\e639";
+}
+
+.icon-biaoqianA01_wode-55:before {
+  content: "\eaad";
+}
+
+.icon-wodeziliao1:before {
+  content: "\e64c";
+}
+
+.icon-50:before {
+  content: "\e632";
+}
+
+.icon-work-copy:before {
+  content: "\e611";
+}
+
+.icon-fenxiang3:before {
+  content: "\e631";
+}
+
+.icon-qian:before {
+  content: "\e640";
+}
+
+.icon-qicheqianlian-:before {
+  content: "\e618";
+}
+
+.icon-che-tianchong:before {
+  content: "\e65c";
+}
+
+.icon-zhangdan:before {
+  content: "\e65d";
+}
+
+.icon-qian1:before {
+  content: "\e607";
+}
+
+.icon-che:before {
+  content: "\e61b";
+}
+
+.icon-changgui:before {
+  content: "\e612";
+}
+
+.icon-kefu:before {
+  content: "\e686";
+}
+
+.icon-shoucang:before {
+  content: "\e629";
+}

@@ -1,0 +1,23 @@
+<view class="main">
+    <image class="back" src="https://i.loli.net/2021/05/06/MJVdgR4iuwKaD3O.jpg" lazy-load="false" style="height:{{imageheight}}px;" bindload="imageLoad" />
+    <view class="histroy" bindtap="toHistory"><text>识别记录</text>
+        <image class="incon_search" src="https://i.loli.net/2021/05/07/74Zdcvf8mYENUg9.png" mode="widthFix" />  
+    </view>
+     <view class="Instructions" bindtap="usemethod">
+        <image class="incon_use" src="https://i.loli.net/2021/05/07/B45Y9qMvWxyaciI.png" mode="widthFix"/>  
+        <text>如何使用</text>
+    </view>
+    <view class="text" style="height:{{imageheight}}px" >
+         <view class="circle">
+             <!-- <block  wx:if="{{!hasUserInfo}}">
+                  <image class="icon" src="https://i.loli.net/2021/05/06/37UqaxSrJIym1Vb.png" bindtap="getUserProfile"/>
+                  <view class="text2">上传照片</view>
+             </block>
+              <block wx:else> -->
+                <image class="icon" src="https://i.loli.net/2021/05/06/37UqaxSrJIym1Vb.png" bindtap="getLocalImage"/>
+                <view class="text2">上传照片</view>
+            <!-- </block> -->
+         </view>
+    </view>
+</view>
+  
